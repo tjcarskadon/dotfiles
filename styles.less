@@ -1,0 +1,62 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+// style the background color of the tree view
+.tree-view {
+  // background-color: black;
+  background-color: darken(#1B2B34,12%);
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  // color: white;
+  background-color: darken(#1B2B34,12%);
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow expression
+atom-text-editor::shadow .cursor {
+  // border-color: limegreen;
+  // border: 1px solid red;
+  background-color: limegreen;
+  opacity: 0.3;
+  visibility: visible;
+}
+
+atom-text-editor::shadow .gutter {
+  // background-color: black;
+  background-color: darken(#1B2B34,12%);
+}
+
+atom-text-editor::shadow .footer {
+  // background-color: black;
+  background-color: darken(#1B2B34,12%);
+}
+atom-text-editor::shadow .gutter .line-number.cursor-line {
+  // background-color: lighten(black, 10%);
+}
+atom-text-editor::shadow .lines .line.cursor-line {
+  // background-color: lighten(black, 10%);
+}
+
+atom-text-editor::shadow .bracket-matcher {
+  background-color: steelblue;
+  bottom-border: 1px solid lime;
+  opacity: .75;
+}
+atom-text-editor::shadow .markup {
+    color: #BB80B3;
+}

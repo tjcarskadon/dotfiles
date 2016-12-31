@@ -1,0 +1,83 @@
+"*":
+  "advanced-open-file":
+    createDirectories: true
+  "atom-beautify":
+    general:
+      _analyticsUserId: "18c6d52c-26da-48bc-84f8-ace7dc257240"
+    jsx:
+      indent_size: 2
+  "autoupdate-packages":
+    lastUpdateTimestamp: 1483146053711
+  core:
+    disabledPackages: [
+      "wrap-guide"
+      "language-gfm"
+      "atom-keyboard-macros-vim"
+      "goto"
+    ]
+    excludeVcsIgnoredPaths: false
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "oceanic-next"
+    ]
+    useCustomTitleBar: true
+  "cursor-blink-interval":
+    cursorBlinkInterval: 1500
+  editor:
+    fontFamily: "consolas"
+    preferredLineLength: 100
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "4041eb6c-3bbf-a860-7af0-8813e0405a4f"
+  "git-plus":
+    general:
+      _analyticsUserId: "22092385-ae6b-4566-a880-9220c4483c18"
+  "imdone-atom": {}
+  linter:
+    errorPanelHeight: 24
+  pigments:
+    groupPaletteColors: "by file"
+    markerType: "native-dot"
+    mergeColorDuplicates: true
+  "spell-check":
+    addKnownWords: true
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.js.jsx"
+      "text.html.basic"
+    ]
+    knownWords: [
+      "var"
+      "const"
+      "react-dom"
+      "react-dom"
+      "react-dom"
+    ]
+  tabs: {}
+  "todo-show":
+    findTheseTodos: [
+      "FIXME"
+      "TODO"
+      "CHANGED"
+      "XXX"
+      "IDEA"
+      "HACK"
+      "NOTE"
+      "REVIEW"
+      "- [ ]"
+    ]
+    sortBy: "Type"
+  "tree-view":
+    hideIgnoredNames: true
+  "vim-mode-plus":
+    statusBarModeStringStyle: "long"
+  welcome:
+    showOnStartup: false

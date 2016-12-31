@@ -1,0 +1,90 @@
+# Your keymap
+#
+# keymaps guides:
+# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#_customizing_keybindings
+# * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
+#
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+# Main
+'atom-text-editor':
+  'cmd-k .': 'pane:split-right'
+  'cmd-k ,': 'pane:split-left'
+
+  # Open my local config
+  'ctrl-cmd-e i': 'application:open-your-init-script'
+  'ctrl-cmd-e c': 'application:open-your-config'
+  'ctrl-cmd-e k': 'application:open-your-keymap'
+  'ctrl-cmd-e s': 'application:open-your-stylesheet'
+  'ctrl-cmd-e n': 'application:open-your-snippets'
+
+# [ vim-mode-plus ]
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  'ctrl-enter': 'editor:newline'
+  'ctrl-w .': 'pane:split-left-moving-current-tab'
+  'ctrl-e': 'vim-mode-plus-user:move-to-end-of-subword'
+  'Q': 'vim-mode-plus-user:move-to-beginning-of-subword'
+  'q': 'vim-mode-plus-user:move-to-next-subword'
+  '-': 'choose-pane:start'
+  'm m': 'choose-pane:focus-last-focused'
+
+  #[ easy-motion-redux ]
+  'cmd f': 'easy-motion-redux:letter'
+  'cmd w': 'easy-motion-redux:words'
+  'cmd W': 'easy-motion-redux:words-select'
+
+'atom-text-editor.vim-mode-plus.insert-mode':
+  'ctrl-e': 'editor:move-to-end-of-line'
+
+'atom-text-editor.vim-mode-plus.operator-pending-mode, atom-text-editor.vim-mode-plus.visual-mode':
+  'i q': 'vim-mode-plus-user:inner-subword'
+
+'atom-text-editor.vim-mode-plus.normal-mode':
+  'g f':      'open-this:here'
+  'ctrl-w f': 'open-this:split-down'
+  'ctrl-w F': 'open-this:split-right'
+  'y s': 'vim-mode-plus:surround'
+  'y s w': 'vim-mode-plus:surround-word'
+
+  # 'd s': 'vim-mode-plus:delete-surround'
+  'd s': 'vim-mode-plus:delete-surround-any-pair'
+  # 'd s': 'vim-mode-plus:delete-surround-any-pair-allow-forwarding'
+
+  # 'y s c': 'vim-mode-plus:change-surround'
+  'y s c': 'vim-mode-plus:change-surround-any-pair'
+  # 'y s c': 'vim-mode-plus:change-surround-any-pair-allow-forwarding'
+
+  'y m s':  'vim-mode-plus:map-surround'
+
+# [ vim-mode-plus-move-selected-text ]
+'atom-text-editor.vim-mode-plus.visual-mode':
+  'ctrl-t': 'vim-mode-plus-user:move-selected-text-toggle-overwrite'
+
+  'ctrl-k': 'vim-mode-plus-user:move-selected-text-up'
+  'ctrl-j': 'vim-mode-plus-user:move-selected-text-down'
+  'ctrl-h': 'vim-mode-plus-user:move-selected-text-left'
+  'ctrl-l': 'vim-mode-plus-user:move-selected-text-right'
+
+  'ctrl-cmd-k': 'vim-mode-plus-user:duplicate-selected-text-up'
+  'ctrl-cmd-j': 'vim-mode-plus-user:duplicate-selected-text-down'
+  'ctrl-cmd-h': 'vim-mode-plus-user:duplicate-selected-text-left'
+  'ctrl-cmd-l': 'vim-mode-plus-user:duplicate-selected-text-right'
+
+# [ terminal ]
+'.platform-darwin atom-workspace':
+  'cmd-`': 'platformio-ide-terminal:toggle'
+
+
+# [ emmet ]
+'atom-text-editor[data-grammar~="jsx"]:not([mini])':
+  'tab': 'emmet:expand-abbreviation-with-tab'
+
+# [ choose-pane] For tree-view
+'.tree-view':
+  '-': 'choose-pane:start'
+  'm m': 'choose-pane:focus-last-focused'
+
+# Map '-', so that I can focus last-focused element by typing `-` twice.
+'atom-text-editor#choose-pane-editor':
+  '-': 'choose-pane:last-focused'

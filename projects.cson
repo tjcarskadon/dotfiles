@@ -1,0 +1,15 @@
+[
+  {
+    title: "Italist Web"
+    paths: [
+      "/Users/Tj/italist/italist-web"
+      "/Users/Tj/italist/Notes"
+    ]
+  }
+  {
+    title: "Tech Todo"
+    paths: [
+      "/Users/Tj/codestuff/techTODO"
+    ]
+  }
+]
